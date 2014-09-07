@@ -1,0 +1,110 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,800);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:100,400,700,900);
+ body,
+.container {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fcfcfa;
+}
+.content {
+    display: block;
+    width: 650px;
+    margin: 0 auto;
+    overflow: visible;
+}
+.post {
+    margin: 40px 0 0 0;
+    border-bottom: 1px solid #ccc;
+}
+.post h1 {
+    font: 800 63px/60px 'Open Sans', sans-serif;
+    letter-spacing: -3px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+    margin: 90px 0 40px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.post p {
+    color: #4c4c4c;
+    font: 400 17px/24px'Gentium Book Basic', serif;
+    margin-top: -20px;
+    padding: 0px;
+}
+
+.post p:hover {
+    color: #111;
+}
+.post h1:hover {
+    color: #000;
+}
+.article {
+    font: 400 60px'Gentium Book Basic', serif;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: normal;
+}
+.post p:first-letter {
+    float: left;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 55px;
+    line-height: 40px;
+    padding-top: 3px;
+    padding-right: 5px;
+    padding-left: 3px;
+    font-family: Georgia;
+}
+
+.control {float: right;}
+
+.control a {text-decoration: none;
+	font: 100 13px/10px 'Open Sans', sans-serif;
+    color: #000;
+    opacity: .5;
+}
+
+.control a:hover {
+    opacity: 1;}
+
+header {
+	font-family: 'Open Sans';
+    text-align: center;}
+
+header h1 {
+    font: 600 60px/60px 'Open Sans', sans-serif;
+    letter-spacing: -5px;
+    /*text-align: center;*/
+}
+
+header a {
+	color: #000;
+	opacity: .5; 
+	text-transform: uppercase;
+	text-decoration: none;
+}
+header a:hover {
+	opacity: 1;
+}
+
+footer {height: 100px;}

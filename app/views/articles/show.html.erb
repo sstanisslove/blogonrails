@@ -1,0 +1,23 @@
+<div class="content">
+  <section class="post">
+
+<h1>
+  <%= @article.title %>
+</h1>
+ 
+<p>
+  <%= @article.text %>
+</p>
+ 
+<h2>Comments</h2>
+<%= render @article.comments %>
+ 
+<div class="control"> 
+<%= link_to 'edit article', edit_article_path(@article) %> |
+<%= link_to 'back to articles', articles_path %>
+</div>
+</section>
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+</div>
