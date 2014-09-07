@@ -13,19 +13,18 @@
       </ul>
     </div>
   <% end %>
- 
   <p>
-    <%= f.label :title %><br>
+    <h4><%= f.label :title %></h4><br>
     <%= f.text_field :title %>
   </p>
  
   <p>
-    <%= f.label :text %><br>
+   <h4> <%= f.label :text %></h4><br>
     <%= f.text_area :text %>
   </p>
  
   <p>
-    <%= f.submit %>
+    <div class="button"><%= f.submit :create %></div>
   </p>
  
 <% end %>

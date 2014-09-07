@@ -19,6 +19,7 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather:100,400,700,900);
  body,
 .container {
+    font-family: 'Open Sans';
     margin: 0;
     padding: 0;
 }
@@ -30,6 +31,20 @@ body {
     width: 650px;
     margin: 0 auto;
     overflow: visible;
+}
+.new {
+    margin: 40px 0 0 0;
+    border-bottom: 1px solid #ccc;
+}
+.new h1 {
+    font: 800 63px/60px 'Open Sans', sans-serif;
+    letter-spacing: -3px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222;
+    margin: 90px 0 40px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
 }
 .post {
     margin: 40px 0 0 0;
@@ -92,7 +107,7 @@ header {
     text-align: center;}
 
 header h1 {
-    font: 600 60px/60px 'Open Sans', sans-serif;
+    font: 800 60px/60px 'Open Sans', sans-serif;
     letter-spacing: -5px;
     /*text-align: center;*/
 }
@@ -108,3 +123,64 @@ header a:hover {
 }
 
 footer {height: 100px;}
+
+.newform input[type="text"], textarea {
+    font-family: 'Open Sans';
+    border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-top: 2px;*/
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    min-width: 98%;
+    max-width: 98%;
+    font-size: 12px;
+    line-height:15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.newform textarea {height: 70px;}
+.newform h4 {
+    font-family: 'Open Sans';
+    text-align: center;
+    margin: -10px;
+
+}
+.button input[type="submit"] {
+    background: #E27575;
+    width: 100%;
+    border: none;
+    margin: 5px 0 10px 0;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#error_explanation {
+    background: #e2b1b1;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    border: 1px solid #E27575;
+    color: #E27575;
+}
+.blockcom {
+display: block;
+    margin-bottom: 150px;}
+.comments {margin-bottom: 80px;
+}
+
+.comments h5 {margin: 0;
+    font-size: 10px;
+}
+.comments .name, .comment {float: left;}
+.comments .name {width: 20%;
+    opacity: .6;
+    font-size: 15px;
+}
+.comments .comment {font-size: 20px;}
+.fc h4 {
+    margin: 0;
+    margin-left: 2px;
+    text-align: left;}

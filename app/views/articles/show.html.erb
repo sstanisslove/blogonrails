@@ -8,16 +8,16 @@
 <p>
   <%= @article.text %>
 </p>
- 
-<h2>Comments</h2>
-<%= render @article.comments %>
- 
 <div class="control"> 
 <%= link_to 'edit article', edit_article_path(@article) %> |
 <%= link_to 'back to articles', articles_path %>
 </div>
-</section>
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
+</section> 
+<div class="blockcom">
+<h2>Comments:</h2>
 
+<%= render @article.comments %>
+</div>
+<h2>Add a comment:</h2>
+<div class="newform fc"> <%= render 'comments/form' %></div>
 </div>
